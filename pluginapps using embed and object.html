@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Embedded PDF demo</title>
+  <style>
+    /* just to show the frame clearly */
+    embed { border: 1px solid #999; }
+  </style>
+</head>
+<body>
+
+  <!-- PDF embedded with the browser’s built-in viewer -->
+  <embed src="eBill.pdf"
+         type="application/pdf"
+         width="100%"          
+         height="600">       
+
+  <!-- Optional fallback -->
+  <!--No fall back content display for embed incase media handler/plug in apps fail.But object has-->>
+  <object data="eBill.pdf" type="application/pdf" width="100%" height="600">
+    <p>Your plug in apps is not supported</p>
+    <a href="eBill.pdf" download>Download the file</a>
+
+  </object>
+
+</body>
+</html>
