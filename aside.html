@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Article with Aside</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, footer { background:#333; color:#fff; padding:1rem; text-align:center; }
+    main { display:flex; gap:1rem; padding:1rem; }
+    article { flex:3; }
+    aside  { flex:1; background:#f2f2f2; padding:1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Weekly Technology Digest</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>The Rise of Quantum Computing</h2>
+      <p>Quantum computers promise to solve certain problems far faster than classical computers by leveraging quantum bits…</p>
+      <p>Researchers worldwide are racing to overcome challenges such as qubit stability and error correction to make practical quantum devices.</p>
+    </article>
+
+    <aside>
+      <h3>Related Reads</h3>
+      <ul>
+        <li><a href="#">Understanding Qubits</a></li>
+        <li><a href="#">Top Quantum Labs in 2025</a></li>
+        <li><a href="#">Quantum vs Classical Benchmarks</a></li>
+      </ul>
+
+      <h3>Author Bio</h3>
+      <p><strong>J. S.</strong> is a computer-science student at TMU with interests in AI, quantum computing, and robotics.</p>
+    </aside>
+  </main>
+<label>Birthday:
+  <input type="date"   name="birthday">
+</label>
+
+<label>Appointment:
+  <input type="datetime-local" name="appt">
+</label>
+
+  <footer>
+    <p>&copy; 2025 Tech Insights • Last updated <time datetime="2025-06-03">June 3 2025</time></p>
+  </footer>
+
+</body>
+</html>

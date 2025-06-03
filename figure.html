@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Figure + Figcaption demo</title>
+  <style>
+    body   { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; background:#fafafa; }
+    figure { max-width: 480px; margin: 0 auto; border: 1px solid #ccc; padding: .5rem; background:#fff; }
+    figcaption { margin-top: .5rem; font-size: .9rem; color:#555; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <h1>Mountains of British Columbia</h1>
+
+  <figure>
+    <img src="https://images.unsplash.com/photo-1542293744-5ae2787b5170"
+         alt="Snow-capped mountain reflecting in a calm lake" width="480" height="320" />
+    <figcaption>
+      **Figure 1.** Sunrise over <em>Mount Assiniboine</em>, captured in summer 2024.
+    </figcaption>
+  </figure>
+
+  <p>
+    The <code>&lt;figure&gt;</code> element groups the image with its caption so they travel together
+    semantically. Screen readers will announce the caption right after the image, and search engines
+    understand that the text describes the media.
+  </p>
+
+</body>
+</html>

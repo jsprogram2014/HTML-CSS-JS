@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Nav Demo</title>
+  <style>
+    /* basic horizontal navigation */
+    nav {
+      background:#333;
+      padding:0.5rem 1rem;
+    }
+    nav ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      gap:1rem;
+    }
+    nav a {
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+    }
+    nav a:hover,
+    nav a:focus {
+      text-decoration:underline;
+    }
+
+    /* current-page indication */
+    nav a[aria-current="page"] {
+      border-bottom:2px solid #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+
+    <!-- main site navigation -->
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="coursera.html">Blog</a></li>
+        <li><a href="figure.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome!</h2>
+    <p>Content of the page goes here…</p>
+  </main>
+
+</body>
+</html>
